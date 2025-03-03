@@ -22,12 +22,12 @@
         <a href="" class="brand" data-aos="zoom-in" data-aos-duration="1000">BABAYAGA</a>
         <div class="menu-btn"></div>
         <div class="navigation">
-            <a href="#home" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Ana Sayfa</a>
-            <a href="#hakkinda"data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Hakkinda</a>
-            <a href="#beceri" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Beceriler</a>
-            <a href="#hizmet" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Servisler</a>
-            <a href="#calismalar" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">Calismalar</a>
-            <a href="#iletisim" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">Iletisim</a>
+            <a href="#main" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Ana Sayfa</a>
+            <a href="#about"data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Hakkinda</a>
+            <a href="#skills" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Beceriler</a>
+            <a href="#services" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Servisler</a>
+            <a href="#work" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">Calismalar</a>
+            <a href="#contact" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">Iletisim</a>
         </div>
     </header>
 
@@ -330,25 +330,24 @@
         })
 
 
-<script>
-    window.addEventListener("DOMContentLoaded", function () {
-        const audio = document.getElementById("background-music");
-        audio.volume = 0.2;
-    });
-</script>
 
-    </script>
-    <audio id="background-music" loop>
+
+
+
+
+<audio id="background-music" autoplay loop muted>
     <source src="music.mp3" type="audio/mp3">
 </audio>
 
 <script>
-    window.addEventListener("click", function() {
+    setTimeout(() => {
         let audio = document.getElementById("background-music");
+        audio.muted = false;
         audio.volume = 0.2;
-        audio.play();
-    }, { once: true }); 
+    }, 1000);
 </script>
+
+            
 
 </body>
 </html>
