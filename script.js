@@ -8,7 +8,7 @@ function cancel() {
     navbar.style.transform = "translateY(-500px)";
 }
 
-const texts = ["SARKICI, ARTIST, SANATCI, TOKAT BOY"];
+const texts = ["SARKICI","ARTIST","SANATCI","TOKAT BOY"];
 let speed = 100;
 const textElements = document.querySelector(".typewriter-text");
 
