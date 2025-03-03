@@ -3,10 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Baba Yaga</title>
+    <title>Baba Yaga | Müzisyen</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin-top: 50px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        h1 {
+            font-size: 3em;
+            letter-spacing: 2px;
+        }
+        p {
+            font-size: 1.2em;
+            opacity: 0.8;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #ff4757;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .button:hover {
+            background: #ff6b81;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
 </head>
 <body>
-    <h1>ben babayaga</h1>
-    <p>test</p>
+    <div class="container">
+        <h1>Baba Yaga</h1>
+        <p>Seslerin büyüsüne hoş geldiniz. Müziğimi keşfedin.</p>
+        <a href="#" class="button">Müziklerim</a>
+    </div>
 </body>
 </html>
