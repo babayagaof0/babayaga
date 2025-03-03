@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>babayaga</title>
+    <audio id="background-music" autoplay loop>
+    <source src="music.mp3" type="audio/mp3">
+    Tarayıcınız bu sesi desteklemiyor.
+</audio>
+    <link rel="icon" type="image/jpg" href="favicon.jpg">
     <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
@@ -328,6 +333,12 @@
         })
 
 
+<script>
+    window.addEventListener("DOMContentLoaded", function () {
+        const audio = document.getElementById("background-music");
+        audio.volume = 0.2;
+    });
+</script>
 
     </script>
 </body>
