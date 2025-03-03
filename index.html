@@ -17,6 +17,9 @@
 </head>
 <body>
 
+<audio id="background-music" autoplay loop muted>
+    <source src="music.mp3" type="audio/mp3">
+</audio>
 
     <header>
         <a href="" class="brand" data-aos="zoom-in" data-aos-duration="1000">BABAYAGA</a>
@@ -337,16 +340,18 @@
 
 
 
+
 <script>
-            <audio id="background-music" autoplay loop muted>
-    <source src="music.mp3" type="audio/mp3">
-</audio>
     setTimeout(() => {
         let audio = document.getElementById("background-music");
-        audio.muted = false;
-        audio.volume = 0.2;
+        if (audio) {
+            audio.muted = false;
+            audio.volume = 0.2;
+            audio.play().catch(error => console.log("Autoplay engellendi:", error));
+        }
     }, 1000);
 </script>
+
 
             
 
