@@ -338,5 +338,17 @@
 </script>
 
     </script>
+    <audio id="background-music" loop>
+    <source src="music.mp3" type="audio/mp3">
+</audio>
+
+<script>
+    window.addEventListener("click", function() {
+        let audio = document.getElementById("background-music");
+        audio.volume = 0.2;
+        audio.play();
+    }, { once: true }); 
+</script>
+
 </body>
 </html>
