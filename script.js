@@ -54,7 +54,7 @@ function changeImage() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    AOS.init(); // AOS'u başlat
+    AOS.init();
     setInterval(changeImage, 5000); 
     typeWriter(); 
 });
